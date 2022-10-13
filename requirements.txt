@@ -1,0 +1,3 @@
+bytewax==0.11.2
+textblob==0.17.1
+requests==2.28.1
