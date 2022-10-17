@@ -1,1 +1,1 @@
-inflation OR cpi
+(inflation OR cpi)

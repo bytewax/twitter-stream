@@ -64,9 +64,6 @@ def get_stream():
     for response_line in response.iter_lines():
         if response_line:
             json_response = json.loads(response_line)
-            json_response = json.dumps(json_response, indent=4, sort_keys=True)
-            print("-" * 200)
-            json_response = json.loads(json_response)
             tweet = json_response["data"]["text"]
             tweetnbr+=1
             yield tweetnbr, str(tweet)

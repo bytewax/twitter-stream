@@ -1,0 +1,10 @@
+inflation, 3
+amp, 3
+biden, 2
+s, 2
+worse, 1
+released, 1
+check, 1
+latest, 1
+video, 1
+highlighting, 1

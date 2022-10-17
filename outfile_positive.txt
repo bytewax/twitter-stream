@@ -1,0 +1,10 @@
+inflation, 5
+rt, 4
+s, 3
+today, 2
+abpoli, 2
+selling, 2
+iranprotests, 2
+listen, 2
+live, 2
+talking, 1

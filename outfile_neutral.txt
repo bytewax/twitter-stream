@@ -1,0 +1,10 @@
+inflation, 9
+prices, 4
+rt, 3
+government, 3
+way, 2
+reduce, 2
+spending, 2
+affecting, 2
+class, 2
+interviewing, 2
