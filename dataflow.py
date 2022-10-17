@@ -16,6 +16,9 @@ from twitter import get_rules, delete_all_rules, get_stream, set_stream_rules
 en = spacy.load('en_core_web_sm')
 sw_spacy = en.Defaults.stop_words
 
+def input_builder(worker_index, worker_count, resume_state):
+    return get_stream()
+
 
 def remove_emoji(tweet):
     """
@@ -80,7 +83,6 @@ def tokenize(sentiment__text):
 cc = SystemClockConfig()
 wc = TumblingWindowConfig(length=timedelta(seconds=60))
 
-
 def count_words():
     return defaultdict(lambda:0)
 
@@ -93,10 +95,6 @@ def count(results, word):
 def sort_dict(key__data):
     key, data = key__data
     return (key, sorted(data.items(), key=lambda k_v: k_v[1], reverse=True)[:10])
-
-
-def input_builder(worker_index, worker_count, resume_state):
-    return get_stream()
 
 
 def output_builder2(worker_index, worker_count):
