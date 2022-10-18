@@ -127,9 +127,8 @@ if __name__ == "__main__":
     flow.map(remove_username)
     flow.map(clean_tweet)
     flow.map(get_tweet_sentiment)
+    flow.inspect(print)
     flow.flat_map(tokenize)
-    # flow.inspect(print)
-    # flow.capture(ManualOutputConfig(output_builder1))
     flow.fold_window(
         "count_words", 
         cc, 
